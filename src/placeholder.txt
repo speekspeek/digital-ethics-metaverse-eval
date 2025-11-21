@@ -1,0 +1,1 @@
+This folder contains core model code (Kalman, BOCPD, HSMM, preprocessing).
