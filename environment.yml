@@ -1,0 +1,19 @@
+name: ethics-env
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.10
+  - numpy
+  - scipy
+  - pandas
+  - scikit-learn
+  - matplotlib
+  - jupyter
+  - statsmodels
+  - pip
+  - pip:
+      - hmmlearn
+      - lifelines
+      - ruptures
+      - causalml
