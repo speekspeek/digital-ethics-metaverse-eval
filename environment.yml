@@ -1,19 +1,22 @@
-name: ethics-env
+name: digital-ethics-metaverse-eval
 channels:
-  - defaults
   - conda-forge
+  - defaults
+
 dependencies:
   - python=3.10
   - numpy
-  - scipy
   - pandas
+  - scipy
   - scikit-learn
-  - matplotlib
-  - jupyter
   - statsmodels
+  - matplotlib
+  - seaborn
+  - semopy
   - pip
+
   - pip:
-      - hmmlearn
-      - lifelines
+      - tqdm
+      - pykalman
       - ruptures
-      - causalml
+      - hmmlearn
