@@ -1,24 +1,34 @@
-# Digital Ethics Dynamic Evaluation Framework
-Code and reproducible workflow for:
+# Dynamic Evaluation of Ethical Awareness in Metaverse-Based Educational Environments
 
-**“A Dynamic Evaluation Framework for Digital Ethical Awareness in Metaverse-based Learning Environments”**  
-Scientific Reports submission.
+Code and reproducibility materials for the manuscript:
 
----
+> **“A Dynamic Evaluation Method for Ethical Awareness in Metaverse-Based Educational Environments Using Hybrid Bayesian Sequential Models”**  
+> submitted to *Scientific Reports*.
 
-## 🔍 Project Overview
-This repository provides the reproducibility materials and code structure for the dynamic evaluation system combining:
-
-- **Kalman Smoothing**
-- **Bayesian Online Change-Point Detection (BOCPD)**
-- **Hidden Semi-Markov Models (HSMM)**
-- **EWMA smoothing**
-- **CFA & IRT-based measurement reconstruction**
-- **ITS + PSM causal effect estimation**
-
-The repository ensures transparency, reusability, and completeness following the *Nature Portfolio Reproducibility Checklist*.
+All data in this repository are **fully simulated** and contain **no identifiable information**.
 
 ---
 
-## 📂 Repository Structure
+## 1. Repository structure
 
+```text
+digital-ethics-metaverse-eval/
+├── data/
+│   └── simulated_panel_data.csv      # 60 learners × 12 weeks × 9 indicators
+├── notebooks/
+│   └── 02_dynamic_evaluation.ipynb   # optional demonstration notebook
+├── results/
+│   ├── figures/                      # exported Figure_1.png … Figure_10.png
+│   └── tables/                       # optional tables (CSV / LaTeX)
+├── src/
+│   ├── cfa_irt.py                    # CFA + GRM item parameters
+│   ├── kalman.py                     # Kalman smoothing of composite scores
+│   ├── bocpd.py                      # BOCPD run-length posteriors
+│   ├── hsmm.py                       # HSMM stage decoding
+│   ├── g_theory.py                   # G-study / D-study reliability
+│   ├── fairness.py                   # DIF + prediction fairness
+│   ├── make_figures.py               # recreate Figures 1–10
+│   └── utils.py                      # shared helper functions
+├── README.md
+├── LICENSE
+└── environment.yml or requirements.txt
